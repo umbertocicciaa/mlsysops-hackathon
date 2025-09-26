@@ -1,0 +1,36 @@
+
+
+sudo apt install python3.10-venv 
+python3 -m venv .venv
+source .venv/bin/activate
+
+
+pip install mlsysops-cli
+
+-------------------------------------------------------
+
+deploy the application 
+
+    mls apps deploy-app --path  app_description.yaml
+
+To remove an application, you just need the app_id 
+	
+	mls apps remove-app Appid 
+
+To check if there is an application deployed or not 
+	
+	mls apps list-all
+
+----------------------------------------------------------
+
+Set the Kubeconfig file
+
+	export KUBECONFIG=kubeconfig.yaml
+
+To set a policy on the Agent:
+
+	mls agent set-policy --agent cluster --file policy.py
+
+To remove an application, you just need the app_id 
+	
+	mls agent delete-policy --agent cluster policy.py 

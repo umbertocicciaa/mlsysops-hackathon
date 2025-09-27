@@ -4,3 +4,9 @@ numpy
 matplotlib
 scikit-learn
 mlsysops-cli
+ipykernel
+seaborn
+plotly
+umap-learn
+nbformat
+xgboost
